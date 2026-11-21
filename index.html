@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Innerbeat — Camera HRV & breathing</title>
-<meta name="description" content="See your heart respond to your breath. A 60-second HRV reading with your iPhone camera, then live breathing biofeedback. No wearable, no ads, data stays on your phone.">
+<meta name="description" content="See your heart respond to your breath. An under-a-minute HRV reading with your iPhone camera, then live breathing biofeedback. No wearable, no ads, data stays on your phone.">
 <style>
 :root{--bg:#0F1419;--card:#1A2027;--fg:#F2F4F7;--sub:#9AA4B2;--acc:#4FD1C5;--line:#2A3340}
 *{box-sizing:border-box}
@@ -19,9 +19,6 @@ h1{font-size:clamp(34px,5vw,56px);line-height:1.05;letter-spacing:-.02em;margin:
 .lead{font-size:19px;color:var(--sub);margin:0 0 28px;max-width:520px}
 .cta{display:inline-flex;align-items:center;gap:10px;background:var(--acc);color:#0F1419;font-weight:700;padding:16px 24px;border-radius:16px;text-decoration:none;font-size:17px}
 .note{font-size:13px;color:var(--sub);margin-top:12px}
-form{display:flex;gap:10px;max-width:460px;margin-top:8px}
-input[type=email]{flex:1;padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--fg);font-size:16px}
-button{padding:14px 20px;border-radius:14px;border:0;background:var(--acc);color:#0F1419;font-weight:700;font-size:16px;cursor:pointer}
 .phone{width:300px;height:620px;border-radius:40px;border:8px solid var(--card);background:var(--bg);margin:0 auto;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5);display:flex;flex-direction:column;padding:50px 18px 24px;gap:14px}
 .phone .big{font-size:30px;font-weight:700}
 .phone .card{background:var(--card);border-radius:18px;padding:14px}
@@ -53,8 +50,8 @@ footer a{color:var(--sub)}
 <div class="hero">
   <div>
     <h1>See your heart respond to your breath.</h1>
-    <p class="lead">A 60-second HRV reading with your iPhone camera. Then breathe with the guide and watch your heart rhythm settle, live. No wearable. No ads. Nothing leaves your phone.</p>
-    <a class="cta" href="#waitlist">Join the waitlist</a>
+    <p class="lead">An under-a-minute HRV reading with your iPhone camera. Then breathe with the guide and watch your heart rate follow your breath, live. No wearable. No ads. Nothing leaves your phone.</p>
+    <a class="cta" href="#beta">Get the beta</a>
     <p class="note">Coming to the App Store in early 2027. iPhone first.</p>
   </div>
   <div class="phone" aria-hidden="true">
@@ -84,7 +81,7 @@ footer a{color:var(--sub)}
     <div class="card"><div class="stat">Heart rate only</div><p>HRV can be far off while you breathe slowly, so breathing sessions compare heart rate, not HRV. (Within 11% in 2 of 4 slow-breathing recordings, but off by 17% and 100% in the other 2.)</p></div>
   </div>
   <p class="sub">Movement, pressing hard or a loose finger lower accuracy. Innerbeat drops those beats and tells you why. It is a wellness tool, not a medical device.</p>
-  <p class="note">Built by a vehicle-sensor engineer who spent years turning noisy signals into decisions. Full validation data will be published here before launch.</p>
+  <p class="note">Built by a sensor engineer who spent years turning noisy signals into decisions. Full validation data will be published here before launch.</p>
 </section>
 
 <section id="pricing">
@@ -98,18 +95,15 @@ footer a{color:var(--sub)}
   <p class="note">No ads, ever. Cancel in Settings anytime.</p>
 </section>
 
-<section id="waitlist">
-  <h2>Get the launch email</h2>
-  <p class="sub">One email when it ships. Nothing else.</p>
-  <form action="[YOUR FORM ENDPOINT]" method="post">
-    <label for="email" style="position:absolute;left:-9999px">Email</label>
-    <input id="email" type="email" name="email" placeholder="you@example.com" required>
-    <button type="submit">Notify me</button>
-  </form>
+<section id="beta">
+  <h2>Get the beta</h2>
+  <p class="sub">Follow @innerbeat_app on X — the TestFlight link goes there first.</p>
+  <!-- TestFlight 공개 링크가 생기면 이 href를 그 링크로 바꾼다 (기획 결정 11-21) -->
+  <a class="cta" href="https://x.com/innerbeat_app" rel="noopener">Follow @innerbeat_app</a>
 </section>
 
 <footer>
-  Innerbeat is for general wellness. It is not a medical device and isn't meant to diagnose or treat any condition. · <a href="privacy.html">Privacy Policy</a> · © 2026 [YOUR NAME]
+  Innerbeat is for general wellness. It is not a medical device and isn't meant to diagnose or treat any condition. · <a href="https://x.com/innerbeat_app" rel="noopener">@innerbeat_app on X</a> · <a href="privacy.html">Privacy Policy</a> · © 2026 Lee Hyeyeon
 </footer>
 </div>
 </body>
