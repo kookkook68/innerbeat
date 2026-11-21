@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Innerbeat — Camera HRV & breathing</title>
+<meta name="description" content="See your heart respond to your breath. A 60-second HRV reading with your iPhone camera, then live breathing biofeedback. No wearable, no ads, data stays on your phone.">
+<style>
+:root{--bg:#0F1419;--card:#1A2027;--fg:#F2F4F7;--sub:#9AA4B2;--acc:#4FD1C5;--line:#2A3340}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:-apple-system,"SF Pro Text",Inter,system-ui,sans-serif;line-height:1.5}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
+.logo{font-weight:700;font-size:20px;letter-spacing:-.01em}
+.logo span{color:var(--acc)}
+nav a{color:var(--sub);text-decoration:none;margin-left:20px;font-size:15px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:60px 0 40px}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.05;letter-spacing:-.02em;margin:0 0 18px}
+.lead{font-size:19px;color:var(--sub);margin:0 0 28px;max-width:520px}
+.cta{display:inline-flex;align-items:center;gap:10px;background:var(--acc);color:#0F1419;font-weight:700;padding:16px 24px;border-radius:16px;text-decoration:none;font-size:17px}
+.note{font-size:13px;color:var(--sub);margin-top:12px}
+form{display:flex;gap:10px;max-width:460px;margin-top:8px}
+input[type=email]{flex:1;padding:14px 16px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--fg);font-size:16px}
+button{padding:14px 20px;border-radius:14px;border:0;background:var(--acc);color:#0F1419;font-weight:700;font-size:16px;cursor:pointer}
+.phone{width:300px;height:620px;border-radius:40px;border:8px solid var(--card);background:var(--bg);margin:0 auto;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.5);display:flex;flex-direction:column;padding:50px 18px 24px;gap:14px}
+.phone .big{font-size:30px;font-weight:700}
+.phone .card{background:var(--card);border-radius:18px;padding:14px}
+.phone svg{width:100%;height:auto}
+section{padding:50px 0;border-top:1px solid var(--line)}
+h2{font-size:30px;letter-spacing:-.01em;margin:0 0 10px}
+.sub{color:var(--sub);margin:0 0 28px;font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{background:var(--card);border-radius:20px;padding:22px}
+.card h3{margin:0 0 8px;font-size:18px}
+.card p{margin:0;color:var(--sub);font-size:15px}
+.stat{font-size:44px;font-weight:700;color:var(--acc);letter-spacing:-.02em}
+.price{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.price .card strong{font-size:22px;display:block;margin-bottom:4px}
+footer{padding:30px 0 50px;color:var(--sub);font-size:13px;border-top:1px solid var(--line)}
+footer a{color:var(--sub)}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.grid,.price{grid-template-columns:1fr}.phone{width:260px;height:540px}}
+</style>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="logo"><img src="apple-touch-icon.png" alt="" width="28" height="28" style="vertical-align:-7px;border-radius:7px;margin-right:8px">Inner<span>beat</span></div>
+  <nav><a href="#how">How it works</a><a href="#proof">Accuracy</a><a href="#pricing">Pricing</a><a href="privacy.html">Privacy</a></nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>See your heart respond to your breath.</h1>
+    <p class="lead">A 60-second HRV reading with your iPhone camera. Then breathe with the guide and watch your heart rhythm settle, live. No wearable. No ads. Nothing leaves your phone.</p>
+    <a class="cta" href="#waitlist">Join the waitlist</a>
+    <p class="note">Coming to the App Store in early 2027. iPhone first.</p>
+  </div>
+  <div class="phone" aria-hidden="true">
+    <div style="font-size:12px;color:var(--sub);letter-spacing:.08em;text-transform:uppercase">Breathe</div>
+    <div class="card" style="display:flex;justify-content:space-between"><div><div style="font-size:11px;color:var(--sub)">Heart rate before</div><div class="big">74</div></div><div><div style="font-size:11px;color:var(--sub)">After</div><div class="big" style="color:var(--acc)">68</div></div></div>
+    <svg viewBox="0 0 260 180"><path d="M0 100 C20 100 28 70 42 55 C56 40 66 40 78 58 C90 76 98 120 110 140 C122 160 134 150 146 120 C158 90 166 55 178 45 C190 35 200 42 212 70 C224 98 232 140 244 150 C252 157 256 150 260 145" fill="none" stroke="#4FD1C5" stroke-width="3" stroke-linecap="round"/></svg>
+    <div style="margin:auto;width:150px;height:150px;border-radius:75px;border:2px solid var(--acc);background:#16302E;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px">Breathe in</div>
+  </div>
+</div>
+
+<section id="how">
+  <h2>How it works</h2>
+  <p class="sub">Three steps, one finger, no setup.</p>
+  <div class="grid">
+    <div class="card"><h3>1. Cover the camera</h3><p>Put a fingertip over the rear lens. The flash lights your finger and the camera sees the tiny brightness change of every heartbeat.</p></div>
+    <div class="card"><h3>2. Read for 60 seconds</h3><p>Innerbeat measures beat-to-beat timing and computes your HRV, then compares it with your own 7-day baseline.</p></div>
+    <div class="card"><h3>3. Breathe and watch</h3><p>Follow the circle at six breaths a minute. Your heart rhythm starts to swing with your breath on screen, in real time.</p></div>
+  </div>
+</section>
+
+<section id="proof">
+  <h2>Honest about accuracy</h2>
+  <p class="sub">We checked Innerbeat against Apple Watch heartbeat timing in 7 side-by-side recordings (one person, Nov 2026).</p>
+  <div class="grid">
+    <div class="card"><div class="stat">±2.3 bpm</div><p>Heart rate: within 2.3 bpm in all 7 recordings</p></div>
+    <div class="card"><div class="stat">±10%</div><p>HRV with normal breathing: within 10% in all 3 recordings</p></div>
+    <div class="card"><div class="stat">Heart rate only</div><p>HRV can be far off while you breathe slowly, so breathing sessions compare heart rate, not HRV. (Within 11% in 2 of 4 slow-breathing recordings, but off by 17% and 100% in the other 2.)</p></div>
+  </div>
+  <p class="sub">Movement, pressing hard or a loose finger lower accuracy. Innerbeat drops those beats and tells you why. It is a wellness tool, not a medical device.</p>
+  <p class="note">Built by a vehicle-sensor engineer who spent years turning noisy signals into decisions. Full validation data will be published here before launch.</p>
+</section>
+
+<section id="pricing">
+  <h2>Honest pricing</h2>
+  <p class="sub">Free to measure every day. Pro keeps the full history and every breathing pattern.</p>
+  <div class="price">
+    <div class="card"><strong>Free</strong><p>Daily readings · 7-day trend · one breathing pattern</p></div>
+    <div class="card" style="border:2px solid var(--acc)"><strong>$19.99 / year</strong><p>Full trends and baseline · all patterns · session compare · insights · export. 7-day free trial.</p></div>
+    <div class="card"><strong>$39.99 once</strong><p>Lifetime. Pay once, keep forever.</p></div>
+  </div>
+  <p class="note">No ads, ever. Cancel in Settings anytime.</p>
+</section>
+
+<section id="waitlist">
+  <h2>Get the launch email</h2>
+  <p class="sub">One email when it ships. Nothing else.</p>
+  <form action="[YOUR FORM ENDPOINT]" method="post">
+    <label for="email" style="position:absolute;left:-9999px">Email</label>
+    <input id="email" type="email" name="email" placeholder="you@example.com" required>
+    <button type="submit">Notify me</button>
+  </form>
+</section>
+
+<footer>
+  Innerbeat is for general wellness. It is not a medical device and isn't meant to diagnose or treat any condition. · <a href="privacy.html">Privacy Policy</a> · © 2026 [YOUR NAME]
+</footer>
+</div>
+</body>
+</html>
